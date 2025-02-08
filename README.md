@@ -1,6 +1,6 @@
 # 🎲 MagicNewton Dice Bot
 
-A simple Puppeteer bot to automate rolling dice on [MagicNewton](https://www.magicnewton.com/portal/rewards). The bot logs in using session cookies and attempts to roll the dice whenever it's available.
+A simple Puppeteer bot to automate rolling dice on [MagicNewton](https://magicnewton.com/portal?referral=qw3lcv03mjqffoqu). The bot logs in using session cookies and attempts to roll the dice whenever it's available.
 
 ## 🚀 Features
 - **Automated Dice Rolling:** 
