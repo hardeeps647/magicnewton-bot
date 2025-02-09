@@ -120,7 +120,7 @@ async function showLiveCountdown(totalMs) {
 
         if (throwDiceClicked) {
           console.log("✅ 'Throw Dice' button clicked!");
-          console.log("⏳ Waiting 20 seconds for dice animation...");
+          console.log("⏳ Waiting 60 seconds for dice animation...");
           await delay(60000);
           userCredits = await page.$eval('#creditBalance', el => el.innerText).catch(() => 'Unknown');
           console.log(`💰 Updated Credits: ${userCredits}`);
