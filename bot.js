@@ -54,8 +54,12 @@ console.log(`
     }
     
     async function getCurrentScore(page) {
-      return await page.$eval('div[style*="border-radius"] h2', el => parseInt(el.innerText) || 0).catch(() => 0);
+      return await page.$eval(
+        'div.jsx-f1b6ce0373f41d79 h2',  // Target the correct div that contains the current roll score
+        el => parseInt(el.innerText) || 0
+      ).catch(() => 0);
     }
+    
     
     async function pressOrBank(page, rollCount, score) {
       if ((rollCount <= 2 && score < 35) || (rollCount > 2 && rollCount < 5 && score < 30)) {
@@ -155,7 +159,7 @@ console.log(`
                 let shouldContinue = await pressOrBank(page, rollCount, score);
                 if (!shouldContinue) break;
                 rollCount++;
-                await delay(5000);
+                await delay(60000);
               }
     
             } else {
